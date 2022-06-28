@@ -9,13 +9,13 @@ const Task = () => {
         if (swiper) {
             return 
         }
-        swiper= new Swiper('.swiper-container', {})
+        swiper= new Swiper('#taskswiper', {})
     }, [])
 
     return (
         istask && <Wrapper>
             <div className="task-module">
-                <div className="swiper-container task-swiper swiper-container-3d">
+                <div className="swiper-container task-swiper swiper-container-3d" id="taskswiper">
                     <div className="swiper-wrapper">
                         <div className="task-item swiper-slide">
                             <img src="https://dimg04.c-ctrip.com/images/0106l120008jelt2nB954.png" alt="" className="task_item_img" />
