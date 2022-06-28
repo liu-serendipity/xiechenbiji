@@ -1010,7 +1010,7 @@ Error generating stack: `+s.message+`
     .swiper-container-3d .swiper-slide {
         transform-style: preserve-3d
     }
-`,lw=()=>{const[e,t]=D.exports.useState(!0);let n=null;return D.exports.useEffect(()=>{n||(n=new De(".swiper-container",{}))},[]),e&&S(ow,{children:U("div",{className:"task-module",children:[S("div",{className:"swiper-container task-swiper swiper-container-3d",children:S("div",{className:"swiper-wrapper",children:S("div",{className:"task-item swiper-slide",children:S("img",{src:"https://dimg04.c-ctrip.com/images/0106l120008jelt2nB954.png",alt:"",className:"task_item_img"})})})}),S("div",{className:"close-view",onClick:()=>t(!e),children:S("img",{src:"https://pages.c-ctrip.com/livestream/tripshoot/dest_tripshoot_task_close.png",className:"close_view_img"})})]})})},uw=ct.div`
+`,lw=()=>{const[e,t]=D.exports.useState(!0);let n=null;return D.exports.useEffect(()=>{n||(n=new De(".taskswiper",{}))},[]),e&&S(ow,{children:U("div",{className:"task-module",children:[S("div",{className:"swiper-container task-swiper swiper-container-3d taskswiper",children:S("div",{className:"swiper-wrapper",children:S("div",{className:"task-item swiper-slide",children:S("img",{src:"https://dimg04.c-ctrip.com/images/0106l120008jelt2nB954.png",alt:"",className:"task_item_img"})})})}),S("div",{className:"close-view",onClick:()=>t(!e),children:S("img",{src:"https://pages.c-ctrip.com/livestream/tripshoot/dest_tripshoot_task_close.png",className:"close_view_img"})})]})})},uw=ct.div`
     .detail_poi_wrap {
         background: #fff;
         padding: 12px 0 16px 12px;
