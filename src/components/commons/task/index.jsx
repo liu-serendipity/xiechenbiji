@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Wrapper } from './style'
-// import { CloseCircleOutline } from 'antd-mobile-icons';
 import Swiper from 'swiper'
 
 const Task = () => {
@@ -10,16 +9,13 @@ const Task = () => {
         if (swiper) {
             return 
         }
-        swiper= new Swiper('.swiper-container', {
-            loop: true,
-            direction:"horizontal",
-        })
+        swiper= new Swiper('.swiper-container', {})
     }, [])
 
     return (
         istask && <Wrapper>
             <div className="task-module">
-                <div className="swiper-container task-swiper">
+                <div className="swiper-container task-swiper swiper-container-3d">
                     <div className="swiper-wrapper">
                         <div className="task-item swiper-slide">
                             <img src="https://dimg04.c-ctrip.com/images/0106l120008jelt2nB954.png" alt="" className="task_item_img" />

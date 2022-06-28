@@ -65,7 +65,7 @@ const Content = ({content={}}) => {
                 <span className="shoot_time">{`拍摄于${contentDate}`}</span>
             </div>
             <div className="content_spliter"></div>
-            <Mask ismask={ismask} closeMask={closeMask} />
+            { ismask && <Mask closeMask={closeMask} /> }
         </Wrapper>
     )
 }

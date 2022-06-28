@@ -63,8 +63,8 @@ const UserInfo = ({imgdata}) => {
                 {
                     addguanzhu &&
                     <div className="user_btn_wrap" onClick={() => onadd()} >
-                        <CheckOutline style={{width:8, height:8, marginRight: 3}} />
-                        <span className="btn_follow_text" style={{fontSize:1}}>已关注</span>
+                        <CheckOutline style={{width:10, height:10, marginRight: 3}} />
+                        <span className="btn_follow_text" style={{fontSize:2}}>已关注</span>
                     </div>
                 }
             </div>

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Wrapper } from './style'
 
-const Mask = ({ismask, closeMask}) => {
+const Mask = ({closeMask}) => {
 
     return (
-        ismask && <Wrapper>
+        <Wrapper>
                 <div className="open_Model">
                     <div className="content">
                         <div className="content_text">是否打开“携程App”阅读全文</div>

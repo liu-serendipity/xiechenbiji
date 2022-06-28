@@ -1,17 +1,20 @@
 {
   "name": "xiechenbiji",
+  "homepage": "https://github.com/liu-serendipity/xiechenbiji",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "antd-mobile": "^5.16.1",
     "antd-mobile-icons": "^0.3.0",
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
+    "gh-pages": "^4.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "styled-components": "^5.3.5",
