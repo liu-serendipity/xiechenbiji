@@ -205,6 +205,24 @@ Error generating stack: `+s.message+`
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */var V1=D.exports,U1=Symbol.for("react.element"),W1=Symbol.for("react.fragment"),X1=Object.prototype.hasOwnProperty,Y1=V1.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,G1={key:!0,ref:!0,__self:!0,__source:!0};function Of(e,t,n){var r,i={},s=null,a=null;n!==void 0&&(s=""+n),t.key!==void 0&&(s=""+t.key),t.ref!==void 0&&(a=t.ref);for(r in t)X1.call(t,r)&&!G1.hasOwnProperty(r)&&(i[r]=t[r]);if(e&&e.defaultProps)for(r in t=e.defaultProps,t)i[r]===void 0&&(i[r]=t[r]);return{$$typeof:U1,type:e,key:s,ref:a,props:i,_owner:Y1.current}}ha.Fragment=W1;ha.jsx=Of;ha.jsxs=Of;fa.exports=ha;const S=fa.exports.jsx,U=fa.exports.jsxs,Kc=fa.exports.Fragment,Q1=({imgdata:e})=>{const[t,n]=D.exports.useState(!1),r=()=>{n(!t)};let i=null;return D.exports.useEffect(()=>{i||(i=new De("#imgswiper",{loop:!0,pagination:{el:"#pagination"}}))},[]),U(yg,{children:[U("div",{className:"user_info_wrap",children:[U("div",{className:"user_head_img_wrap",children:[S("img",{src:"https://dimg04.c-ctrip.com/images/0Z83p120009gcozr9F4B5_C_180_180.jpg",alt:"",className:"user_head_img"}),S("img",{src:"https://dimg04.c-ctrip.com/images/0104h1200082xud8qB94B.png",alt:"",className:"user_head_vicon"})]}),U("div",{className:"user_text_wrap",children:[S("div",{className:"user_name_and_tag",children:S("span",{className:"user_text_name",children:"\u4F69\u5947\u9752\u6625\u73AF\u6E38\u8BB0~"})}),U("div",{className:"user_text_job",children:[S("div",{className:"user_text_job_name",children:"\u9152\u5E97\u540D\u5BBF\u4F53\u9A8C\u5E08"}),S("div",{className:"user_text_describe",children:"268\u4EBA\u5173\u6CE8\u4E86TA"})]})]}),!t&&U("div",{className:"user_btn_wrap",onClick:()=>r(),children:[S(D1,{style:{width:10,height:10,marginRight:4}}),S("span",{className:"btn_follow_text",children:"\u5173\u6CE8"})]}),t&&U("div",{className:"user_btn_wrap",onClick:()=>r(),children:[S(O1,{style:{width:10,height:10,marginRight:3}}),S("span",{className:"btn_follow_text",style:{fontSize:2},children:"\u5DF2\u5173\u6CE8"})]})]}),S("div",{className:"media media-layer",children:U("div",{className:"swiper-container mediaSwiper",id:"imgswiper",children:[S("div",{className:"swiper-wrapper media-swiper-wrapper",children:(()=>e.map(a=>S("img",{src:a.pic,className:"swiper-slide"},a.id)))()}),S("div",{className:"swiper-pagination",id:"pagination"})]})})]})},q1=ct.div`
+    .swiper-container {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+    }
+    .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box;
+    }
     .star_product_wrap {
         position: relative;
         margin-top: -10px;
@@ -1010,7 +1028,7 @@ Error generating stack: `+s.message+`
     .swiper-container-3d .swiper-slide {
         transform-style: preserve-3d
     }
-`,lw=()=>{const[e,t]=D.exports.useState(!0);let n=null;return D.exports.useEffect(()=>{n||(n=new De(".taskswiper",{}))},[]),e&&S(ow,{children:U("div",{className:"task-module",children:[S("div",{className:"swiper-container task-swiper swiper-container-3d taskswiper",children:S("div",{className:"swiper-wrapper",children:S("div",{className:"task-item swiper-slide",children:S("img",{src:"https://dimg04.c-ctrip.com/images/0106l120008jelt2nB954.png",alt:"",className:"task_item_img"})})})}),S("div",{className:"close-view",onClick:()=>t(!e),children:S("img",{src:"https://pages.c-ctrip.com/livestream/tripshoot/dest_tripshoot_task_close.png",className:"close_view_img"})})]})})},uw=ct.div`
+`,lw=()=>{const[e,t]=D.exports.useState(!0);let n=null;return D.exports.useEffect(()=>{n||(n=new De("#taskswiper",{}))},[]),e&&S(ow,{children:U("div",{className:"task-module",children:[S("div",{className:"swiper-container task-swiper swiper-container-3d",id:"taskswiper",children:S("div",{className:"swiper-wrapper",children:S("div",{className:"task-item swiper-slide",children:S("img",{src:"https://dimg04.c-ctrip.com/images/0106l120008jelt2nB954.png",alt:"",className:"task_item_img"})})})}),S("div",{className:"close-view",onClick:()=>t(!e),children:S("img",{src:"https://pages.c-ctrip.com/livestream/tripshoot/dest_tripshoot_task_close.png",className:"close_view_img"})})]})})},uw=ct.div`
     .detail_poi_wrap {
         background: #fff;
         padding: 12px 0 16px 12px;
