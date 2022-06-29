@@ -1,39 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Wrapper } from './style';
-import Swiper from 'swiper';
+
 import { AddOutline, CheckOutline } from 'antd-mobile-icons'
 
-const UserInfo = ({imgdata}) => {
-    const [addguanzhu, setAddguanzhu] = useState(false)
+const UserInfo = () => {
 
+    const [addguanzhu, setAddguanzhu] = useState(false)
     const onadd = () => {
         setAddguanzhu(!addguanzhu)
-    }
-    
-    let swiper = null;
-    useEffect(() => {
-        if (swiper) {
-            return 
-        }
-        swiper= new Swiper('#imgswiper', {
-            loop: true,
-            pagination: {
-                el:"#pagination",
-                // observerParent: true,
-            }
-        })
-    }, [])
-
-    const renderImg = () => {
-        return imgdata.map(item => {
-            return (
-                <img 
-                    src={item.pic} 
-                    key={item.id}
-                    className="swiper-slide"
-                    />
-            )
-        })
     }
 
     return (
@@ -67,14 +41,6 @@ const UserInfo = ({imgdata}) => {
                         <span className="btn_follow_text" style={{fontSize:2}}>已关注</span>
                     </div>
                 }
-            </div>
-            <div className="media media-layer">
-                <div className="swiper-container mediaSwiper" id="imgswiper">
-                    <div className="swiper-wrapper media-swiper-wrapper">
-                        {renderImg()}
-                    </div>
-                    <div className="swiper-pagination" id="pagination"></div>
-                </div>
             </div>
         </Wrapper>
     )

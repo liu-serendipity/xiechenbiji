@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Wrapper } from './style'
 import UserInfo from '../user-info'
+import ImgSwiper from '../img-swiper'
 import CardSwiper from '../card-swiper'
 import Content from '../Content'
 import PraiseAndComments from '../praise-and-comments'
@@ -10,8 +11,7 @@ import Location from '../Location'
 import LevelIcon from '../commons/level-icon'
 import OpenCtrip from '../commons/open-ctrip'
 import PublishButton from '../commons/publish-button'
-import { getpersonInfo, getListInfo, getContent, getUserInfo, getOthers, getContentLocation } from '../../api/request'
-
+import { getpersonInfo, getListInfo, getContent, getUserInfo, getOthers, getContentLocation } from '@/api/request'
 
 const Main = () => {
 
@@ -42,7 +42,8 @@ const Main = () => {
     return (
         <Wrapper>
             <div className="main">
-                <UserInfo imgdata={imgdata}/>
+                <UserInfo />
+                <ImgSwiper imgdata={imgdata}/>
                 <OpenCtrip text='打开携程App，查看高清大图' />
                 <PublishButton />
                 <Location contentLocation={contentLocation} />
