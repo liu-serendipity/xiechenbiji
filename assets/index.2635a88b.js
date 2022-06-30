@@ -803,8 +803,7 @@ Error generating stack: `+s.message+`
         padding-left: 12px;
     }
     .relevant_waterfall_box {
-        width: 100%;
-        position: relative;
+        width: 375px;
         background: #f4f8fb;
         display: flex;
         flex-direction: column;
@@ -817,8 +816,6 @@ Error generating stack: `+s.message+`
         border-radius: 6px;
         margin-bottom: 10px;
         background: #fff;
-        position: relative;
-        counter-increment: item-counter;
     }
     .relevant_wf_item_box {
         margin: 5px;
